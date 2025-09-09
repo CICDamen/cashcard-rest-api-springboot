@@ -1,4 +1,6 @@
 package example.cashcard;
 
-public record CashCard(long id, double amount) {
+import org.springframework.data.annotation.Id;
+
+public record CashCard(@Id Long id, double amount) {
 }
